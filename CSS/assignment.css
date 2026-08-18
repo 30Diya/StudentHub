@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f2e8;
+    color:#102f2a;
+}
+
+/* Navbar */
+.navbar{
+    background:#103832;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#f5f2e8;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar li{
+    margin:0 15px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+}
+
+.navbar a:hover{
+    color:#8bc8b5;
+}
+
+.profile{
+    width:40px;
+    height:40px;
+    background:#f5f2e8;
+    border-radius:50%;
+}
+
+/* Page */
+.container{
+    width:90%;
+    margin:40px auto;
+}
+
+h2{
+    color:#103832;
+    font-size:28px;
+    margin-bottom:25px;
+    border-bottom:2px solid #b8c9c1;
+    padding-bottom:12px;
+}
+
+/* Assignment Cards */
+.assignment{
+    background:#fffdf5;
+    border:1px solid #d8d4c7;
+    border-left:5px solid #3f806d;
+    padding:22px;
+    margin-bottom:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:8px;
+}
+
+.assignment h3{
+    color:#103832;
+    margin-bottom:8px;
+}
+
+.assignment p{
+    color:#68736f;
+    margin-bottom:8px;
+}
+
+.assignment small{
+    color:#7b817d;
+}
+
+.pending,
+.completed{
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.pending{
+    background:#f1dfad;
+    color:#765b18;
+}
+
+.completed{
+    background:#cfe3d9;
+    color:#245c4d;
+}
+body.dark {
+    background: #0d2823;
+    color: #f5f3ea;
+}
+
+body.dark .card,
+body.dark .faq-box,
+body.dark .event-card,
+body.dark .container,
+body.dark .contact-form {
+    background: #173b34;
+    color: #f5f3ea;
+}
+
+body.dark p {
+    color: #c5d4ce;
+}

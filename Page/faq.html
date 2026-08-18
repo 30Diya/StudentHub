@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - FAQ</title>
+    <link rel="stylesheet" href="../CSS/faq.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">STUDENT<span>HUB</span></div>
+
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+    <script src="../JS/theme.js"></script>
+
+    <div class="profile">S</div>
+</nav>
+
+<!-- FAQ Header -->
+<section class="faq-header">
+    <p>STUDENTHUB SUPPORT</p>
+    <h1>Frequently Asked <span>Questions</span></h1>
+    <h4>Find quick answers to common questions about StudentHub.</h4>
+
+    <div class="search">
+        🔍
+        <input type="text" id="search" placeholder="Search your question...">
+    </div>
+</section>
+
+<!-- FAQ Content -->
+<div class="container">
+
+    <div class="faq-box">
+        <div class="number">01</div>
+        <div class="question">
+            <h3>How do I register for StudentHub?</h3>
+            <p>Create an account using your student ID and email address.</p>
+        </div>
+        <button>+</button>
+    </div>
+
+    <div class="faq-box">
+        <div class="number">02</div>
+        <div class="question">
+            <h3>How can I view my dashboard?</h3>
+            <p>Log in and click the Dashboard menu from the navigation bar.</p>
+        </div>
+        <button>+</button>
+    </div>
+
+    <div class="faq-box">
+        <div class="number">03</div>
+        <div class="question">
+            <h3>How do I update my profile?</h3>
+            <p>Go to the Profile page and click the Edit Profile button.</p>
+        </div>
+        <button>+</button>
+    </div>
+
+    <div class="faq-box">
+        <div class="number">04</div>
+        <div class="question">
+            <h3>How can I check upcoming events?</h3>
+            <p>Open the Event page from the navigation bar to see upcoming campus events.</p>
+        </div>
+        <button>+</button>
+    </div>
+
+    <div class="faq-box">
+        <div class="number">05</div>
+        <div class="question">
+            <h3>Who can I contact for support?</h3>
+            <p>Use the Contact page to send your questions or feedback to StudentHub.</p>
+        </div>
+        <button>+</button>
+    </div>
+
+</div>
+
+<!-- Bottom Help -->
+<div class="help">
+    <h2>Still need help?</h2>
+    <p>Our support team is ready to help you.</p>
+    <a href="contact.html">Contact Us →</a>
+</div>
+
+<script>
+    const boxes = document.querySelectorAll(".faq-box");
+
+    boxes.forEach(box => {
+        box.addEventListener("click", () => {
+            box.classList.toggle("open");
+            box.querySelector("button").textContent =
+                box.classList.contains("open") ? "−" : "+";
+        });
+    });
+
+    document.getElementById("search").addEventListener("keyup", function () {
+        let value = this.value.toLowerCase();
+
+        boxes.forEach(box => {
+            let text = box.innerText.toLowerCase();
+            box.style.display = text.includes(value) ? "flex" : "none";
+        });
+    });
+</script>
+<script src="JS/theme.js"></script>
+</body>
+</html>

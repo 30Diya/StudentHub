@@ -1,0 +1,1247 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   COLORS
+========================================= */
+
+:root {
+
+    --dark-green: #16302b;
+    --green: #3a7563;
+    --light-green: #8eb9a8;
+
+    --cream: #f5f3ea;
+    --white: #ffffff;
+
+    --text: #18201e;
+    --gray: #71817b;
+
+    --border: #ddd9cd;
+
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    background: var(--cream);
+    color: var(--text);
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    height: 76px;
+
+    background: var(--dark-green);
+
+    color: white;
+
+    padding: 0 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+/* LOGO */
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    letter-spacing: -0.5px;
+
+}
+
+.logo span {
+
+    color: var(--light-green);
+
+}
+
+
+/* MENU */
+
+.menu {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+.menu li {
+
+    display: flex;
+
+}
+
+.menu a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 14px;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+.menu a:hover {
+
+    background: var(--green);
+
+}
+
+.menu a.active {
+
+    background: var(--green);
+
+}
+
+
+/* PROFILE */
+
+.profile {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: var(--cream);
+
+    color: var(--dark-green);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   CONTACT HERO
+========================================= */
+
+.contact-hero {
+
+    width: 90%;
+
+    max-width: 1250px;
+
+    margin: 45px auto 30px;
+
+    min-height: 250px;
+
+    padding: 45px 55px;
+
+    border-radius: 22px;
+
+    background: var(--dark-green);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* Decorative circle */
+
+.contact-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    border: 1px solid rgba(142, 185, 168, 0.4);
+
+    border-radius: 50%;
+
+    right: 100px;
+
+    top: -160px;
+
+}
+
+
+.contact-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    border: 1px solid rgba(142, 185, 168, 0.25);
+
+    border-radius: 50%;
+
+    right: 10px;
+
+    bottom: -120px;
+
+}
+
+
+/* HERO TEXT */
+
+.hero-text {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+
+}
+
+.small-title {
+
+    color: var(--light-green);
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+}
+
+.hero-text h1 {
+
+    font-size: 54px;
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+
+}
+
+.hero-text h1 span {
+
+    color: #9bc4b3;
+
+}
+
+.hero-text > p:last-child {
+
+    color: #c7d7d1;
+
+    line-height: 1.7;
+
+    max-width: 550px;
+
+}
+
+
+/* HERO NUMBER */
+
+.hero-number {
+
+    width: 160px;
+
+    height: 160px;
+
+    border: 1px solid #55756c;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.hero-number span {
+
+    color: var(--light-green);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+.hero-number strong {
+
+    font-size: 55px;
+
+    color: var(--cream);
+
+}
+
+
+/* =========================================
+   CONTACT INFO CARDS
+========================================= */
+
+.contact-info {
+
+    width: 90%;
+
+    max-width: 1250px;
+
+    margin: 0 auto 45px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.info-card {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    transition: 0.3s;
+
+}
+
+
+.info-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: var(--green);
+
+    box-shadow: 0 12px 30px rgba(22, 48, 43, 0.08);
+
+}
+
+
+/* ICON */
+
+.icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 12px;
+
+    background: #e4eee9;
+
+    color: var(--green);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+}
+
+
+.info-card h3 {
+
+    font-size: 15px;
+
+    margin-bottom: 6px;
+
+}
+
+.info-card p {
+
+    color: var(--gray);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================
+   MAIN CONTACT SECTION
+========================================= */
+
+.contact-section {
+
+    width: 90%;
+
+    max-width: 1250px;
+
+    margin: 0 auto 60px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+}
+
+
+.section-label {
+
+    color: var(--green);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.contact-form h2 {
+
+    font-size: 31px;
+
+    margin-bottom: 10px;
+
+}
+
+.contact-form h2 span {
+
+    color: var(--green);
+
+}
+
+
+.form-description {
+
+    color: var(--gray);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 28px;
+
+    max-width: 500px;
+
+}
+
+
+/* INPUT ROW */
+
+.input-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+}
+
+
+/* INPUT GROUP */
+
+.input-group {
+
+    margin-bottom: 18px;
+
+}
+
+.input-group label {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: var(--text);
+
+}
+
+
+/* INPUTS */
+
+.input-group input,
+.input-group textarea {
+
+    width: 100%;
+
+    border: 1px solid #d8ddd8;
+
+    background: #fafbf9;
+
+    border-radius: 8px;
+
+    padding: 13px;
+
+    font-size: 14px;
+
+    color: var(--text);
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+
+.input-group input {
+
+    height: 45px;
+
+}
+
+
+.input-group textarea {
+
+    height: 130px;
+
+    resize: vertical;
+
+    min-height: 100px;
+
+}
+
+
+.input-group input:focus,
+.input-group textarea:focus {
+
+    border-color: var(--green);
+
+    background: white;
+
+    box-shadow: 0 0 0 3px rgba(58, 117, 99, 0.1);
+
+}
+
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+
+    color: #9aa59f;
+
+}
+
+
+/* BUTTON */
+
+.contact-form button {
+
+    border: none;
+
+    background: var(--dark-green);
+
+    color: white;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.contact-form button span {
+
+    margin-left: 10px;
+
+    font-size: 17px;
+
+}
+
+
+.contact-form button:hover {
+
+    background: var(--green);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   MAP SECTION
+========================================= */
+
+.map-section {
+
+    background: var(--dark-green);
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    color: white;
+
+    overflow: hidden;
+
+}
+
+
+.map-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+}
+
+
+.map-heading .section-label {
+
+    color: var(--light-green);
+
+}
+
+
+.map-heading h2 {
+
+    font-size: 28px;
+
+}
+
+
+.map-heading h2 span {
+
+    color: var(--light-green);
+
+}
+
+
+.location-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    border: 1px solid #55756c;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: var(--light-green);
+
+    font-size: 20px;
+
+}
+
+
+/* MAP */
+
+.map-container {
+
+    width: 100%;
+
+    height: 310px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    border: 1px solid #55756c;
+
+}
+
+
+.map-container iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 0;
+
+    display: block;
+
+}
+
+
+/* MAP FOOTER */
+
+.map-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-top: 18px;
+
+}
+
+
+.map-footer strong {
+
+    font-size: 14px;
+
+}
+
+
+.map-footer p {
+
+    color: #9bb0a8;
+
+    font-size: 11px;
+
+    margin-top: 5px;
+
+}
+
+
+.map-footer a {
+
+    color: var(--light-green);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    padding: 9px 13px;
+
+    border: 1px solid #55756c;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+
+}
+
+
+.map-footer a:hover {
+
+    background: var(--green);
+
+    color: white;
+
+}
+
+
+/* =========================================
+   HELP SECTION
+========================================= */
+
+.help-section {
+
+    width: 90%;
+
+    max-width: 1250px;
+
+    margin: 0 auto 70px;
+
+}
+
+
+.help-heading {
+
+    margin-bottom: 25px;
+
+}
+
+
+.help-heading h2 {
+
+    font-size: 30px;
+
+}
+
+
+.help-heading h2 span {
+
+    color: var(--green);
+
+}
+
+
+/* HELP CARDS */
+
+.help-cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.help-card {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+
+}
+
+
+.help-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(22, 48, 43, 0.08);
+
+}
+
+
+.help-card > span {
+
+    color: var(--green);
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.help-card h3 {
+
+    font-size: 17px;
+
+    margin: 20px 0 10px;
+
+}
+
+
+.help-card p {
+
+    color: var(--gray);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    min-height: 62px;
+
+}
+
+
+.help-card a {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: var(--green);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+/* GREEN CARD */
+
+.help-card.green-card {
+
+    background: var(--green);
+
+    color: white;
+
+}
+
+
+.help-card.green-card > span {
+
+    color: #c5ded3;
+
+}
+
+
+.help-card.green-card p {
+
+    color: #d5e3de;
+
+}
+
+
+.help-card.green-card a {
+
+    color: white;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background: var(--dark-green);
+
+    color: white;
+
+    padding: 35px 5%;
+
+}
+
+
+.footer-logo {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+.footer-logo span {
+
+    color: var(--light-green);
+
+}
+
+
+footer > p {
+
+    color: #9aada6;
+
+    font-size: 12px;
+
+    margin-top: 8px;
+
+}
+
+
+.footer-line {
+
+    height: 1px;
+
+    background: #34534b;
+
+    margin: 25px 0 15px;
+
+}
+
+
+footer small {
+
+    color: #718b82;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+
+    .navbar {
+
+        height: auto;
+
+        padding: 18px 5%;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+    }
+
+
+    .menu {
+
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .contact-hero {
+
+        padding: 40px;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 44px;
+
+    }
+
+
+    .contact-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .help-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .navbar {
+
+        align-items: flex-start;
+
+    }
+
+
+    .logo {
+
+        font-size: 20px;
+
+    }
+
+
+    .profile {
+
+        width: 35px;
+
+        height: 35px;
+
+    }
+
+
+    .contact-hero {
+
+        width: 92%;
+
+        padding: 30px;
+
+        min-height: 300px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 30px;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .hero-number {
+
+        width: 120px;
+
+        height: 110px;
+
+        padding: 18px;
+
+    }
+
+
+    .hero-number strong {
+
+        font-size: 40px;
+
+    }
+
+
+    .contact-info {
+
+        width: 92%;
+
+    }
+
+
+    .contact-section {
+
+        width: 92%;
+
+    }
+
+
+    .contact-form {
+
+        padding: 25px;
+
+    }
+
+
+    .input-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+
+    .map-section {
+
+        padding: 20px;
+
+    }
+
+
+    .map-container {
+
+        height: 250px;
+
+    }
+
+
+    .help-section {
+
+        width: 92%;
+
+    }
+
+}
+body.dark {
+    background: #0d2823;
+    color: #f5f3ea;
+}
+
+body.dark .card,
+body.dark .faq-box,
+body.dark .event-card,
+body.dark .container,
+body.dark .contact-form {
+    background: #173b34;
+    color: #f5f3ea;
+}
+
+body.dark p {
+    color: #c5d4ce;
+}

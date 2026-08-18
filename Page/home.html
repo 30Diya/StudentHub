@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Home</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        STUDENT<span>HUB</span>
+    </div>
+
+    <ul class="menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        
+    </ul>
+
+    <!-- Login / Register -->
+
+    <div class="auth">
+        <a href="login.html" class="login">Login</a>
+        <a href="register.html" class="register">Register</a>
+    </div>
+
+    <!-- Theme -->
+
+    <div class="theme">
+        <button onclick="lightMode()">☀</button>
+        <button onclick="darkMode()">☾</button>
+    </div>
+
+    <div class="profile">S</div>
+
+</nav>
+
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="tag">WELCOME TO STUDENTHUB</p>
+
+        <h1>
+            Your Campus.<br>
+            <span>Your Future.</span>
+        </h1>
+
+        <p class="hero-text">
+            Manage your academics, discover events,
+            check results and stay connected with your campus.
+        </p>
+
+        <a href="dashboard.html" class="btn">
+            Explore Dashboard →
+        </a>
+
+    </div>
+
+
+    <!-- Image -->
+
+    <div class="hero-image">
+
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800"
+             alt="Students studying together">
+
+        <div class="image-label">
+            <span>STUDENT</span>
+            <strong>01</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Highlights -->
+
+<section class="section">
+
+    <div class="section-title">
+        <p>EXPLORE</p>
+        <h2>Student Highlights</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-number">01</div>
+            <h3>Latest News</h3>
+            <p>Stay updated with important campus news.</p>
+            <a href="#">Read More →</a>
+        </div>
+
+        <div class="card">
+            <div class="card-number">02</div>
+            <h3>Assignments</h3>
+            <p>View and manage your latest assignments.</p>
+            <a href="#">View Assignments →</a>
+        </div>
+
+        <div class="card">
+            <div class="card-number">03</div>
+            <h3>Results</h3>
+            <p>Check your academic results and progress.</p>
+            <a href="#">Check Results →</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Events -->
+
+<section class="section">
+
+    <div class="section-title">
+        <p>COMING SOON</p>
+        <h2>Upcoming Events</h2>
+    </div>
+
+    <div class="events">
+
+        <div class="event">
+
+            <div class="date">
+                <strong>15</strong>
+                <span>AUG</span>
+            </div>
+
+            <div>
+                <h3>Tech Fest 2026</h3>
+                <p>Technology • Main Auditorium</p>
+            </div>
+
+            <span class="arrow">→</span>
+
+        </div>
+
+
+        <div class="event">
+
+            <div class="date">
+                <strong>22</strong>
+                <span>AUG</span>
+            </div>
+
+            <div>
+                <h3>Sports Meet</h3>
+                <p>Sports • College Ground</p>
+            </div>
+
+            <span class="arrow">→</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+    <strong>STUDENT<span>HUB</span></strong>
+    <p>Your one-stop student portal.</p>
+</footer>
+
+
+<!-- Light / Dark Mode -->
+
+<script>
+
+function lightMode() { 
+    document.body.classList.remove("dark"); 
+} 
+
+function darkMode() { 
+    document.body.classList.add("dark"); 
+} 
+
+</script>
+<script src="JS/theme.js"></script>
+<script src="../JS/home.js"></script>
+</body>
+</html>

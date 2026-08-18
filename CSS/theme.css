@@ -1,0 +1,34 @@
+.theme-buttons{
+    display:flex;
+    gap:5px;
+}
+
+.theme-buttons button{
+    border:none;
+    padding:8px 10px;
+    border-radius:6px;
+    cursor:pointer;
+    background:#f5f2e8;
+    color:#103832;
+}
+
+/* DARK MODE */
+
+body.dark{
+    background:#0d2823;
+    color:#f5f2e8;
+}
+
+body.dark .card,
+body.dark .assignment,
+body.dark .achievement,
+body.dark .faq-box,
+body.dark .event-card,
+body.dark .contact-form{
+    background:#173b34;
+    color:#f5f2e8;
+}
+
+body.dark p{
+    color:#c5d4ce;
+}

@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f8f5eb;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+
+/* LEFT SIDE */
+
+.left{
+    width:50%;
+    min-height:100vh;
+    position:relative;
+
+    background:
+    linear-gradient(
+        rgba(13,40,35,.50),
+        rgba(13,40,35,.50)
+    ),
+    url("https://images.unsplash.com/photo-1487700160041-babef9c3cb55?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxvZ2lufGVufDB8fDB8fHww");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.left-content{  
+    position:absolute;
+    left:70px;
+    bottom:80px;
+    color:white;
+    max-width:520px;
+}
+
+.left-content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.left-content h1 span{
+    color:#7db3a3;
+}
+
+.left-content h2{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.left-content p{
+    font-size:17px;
+    line-height:1.7;
+}
+
+
+/* RIGHT SIDE */
+
+.right{
+    width:50%;
+    background:#f8f5eb;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.register-box{
+    width:100%;
+    max-width:600px;
+}
+
+
+/* LOGO */
+
+.register-box > h1{
+    text-align:center;
+    font-size:38px;
+    color:#0d2823;
+}
+
+.register-box h1 span{
+    color:#3d806d;
+}
+
+.portal{
+    text-align:center;
+    color:#777;
+    margin-top:5px;
+}
+
+
+/* HEADING */
+
+.register-box h2{
+    color:#0d2823;
+    font-size:32px;
+    margin-top:30px;
+}
+
+.text{
+    color:#777;
+    margin:8px 0 22px;
+}
+
+
+/* FORM */
+
+label{
+    display:block;
+    margin-bottom:7px;
+    font-size:14px;
+    font-weight:bold;
+    color:#173b34;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #d5d5d5;
+    border-radius:7px;
+    background:white;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#3d806d;
+}
+
+
+/* TWO INPUTS */
+
+.row{
+    display:flex;
+    gap:15px;
+}
+
+.field{
+    flex:1;
+}
+
+
+/* TERMS */
+
+.terms{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:5px 0 20px;
+}
+
+.terms input{
+    width:auto;
+}
+
+.terms span{
+    font-size:13px;
+    color:#666;
+}
+
+
+/* BUTTON */
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:7px;
+    background:#3d806d;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2d6254;
+}
+
+
+/* LOGIN */
+
+.login{
+    text-align:center;
+    margin-top:20px;
+    color:#777;
+    font-size:14px;
+}
+
+.login a{
+    color:#3d806d;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    .container{
+        display:block;
+    }
+
+    .left{
+        display:none;
+    }
+
+    .right{
+        width:100%;
+        min-height:100vh;
+        padding:25px;
+    }
+
+    .row{
+        display:block;
+    }
+
+    .register-box h2{
+        font-size:27px;
+    }
+}
