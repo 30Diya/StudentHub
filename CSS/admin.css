@@ -149,3 +149,35 @@ body.dark .contact-form {
 body.dark p {
     color: #c5d4ce;
 }
+body.dark .sidebar {
+    background: #122f2a;
+}
+
+body.dark .sidebar a {
+    background: #173b34;
+    color: #f5f3ea;
+}
+
+body.dark .content h2 {
+    color: #f5f3ea;
+    border-color: #355f55;
+}
+
+body.dark table {
+    background: #173b34;
+    color: #f5f3ea;
+}
+
+body.dark table,
+body.dark th,
+body.dark td {
+    border-color: #355f55;
+}
+
+body.dark td {
+    color: #f5f3ea;
+}
+
+body.dark .content {
+    color: #f5f3ea;
+}

@@ -1,104 +1,288 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-body{
-    background:#f5f2e8;
-    color:#102f2a;
+/* ================= BODY ================= */
+
+body {
+    background: #f5f2e8;
+    color: #102f2a;
+    min-height: 100vh;
 }
 
-/* Navbar */
-.navbar{
-    background:#103832;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #103832;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
 }
 
-.logo{
-    font-size:24px;
-    font-weight:bold;
-    color:#f5f2e8;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5f2e8;
 }
 
-.navbar ul{
-    display:flex;
-    list-style:none;
+.navbar ul {
+    display: flex;
+    list-style: none;
 }
 
-.navbar li{
-    margin:0 15px;
+.navbar li {
+    margin: 0 15px;
 }
 
-.navbar a{
-    color:white;
-    text-decoration:none;
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.navbar a:hover{
-    color:#8bc8b5;
+.navbar a:hover {
+    color: #8bc8b5;
 }
 
-.profile{
-    width:40px;
-    height:40px;
-    background:#f5f2e8;
-    border-radius:50%;
+/* Profile Circle */
+
+.profile {
+    width: 40px;
+    height: 40px;
+    background: #f5f2e8;
+    border-radius: 50%;
 }
 
-/* Page */
-.container{
-    width:90%;
-    margin:40px auto;
+
+/* ================= PAGE CONTAINER ================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
 }
 
-h2{
-    color:#103832;
-    font-size:28px;
-    margin-bottom:25px;
-    border-bottom:2px solid #b8c9c1;
-    padding-bottom:12px;
+
+/* ================= PAGE TITLE ================= */
+
+.container h2 {
+    color: #103832;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #b8c9c1;
+    padding-bottom: 12px;
 }
+
+
+/* ================= ACHIEVEMENT CARDS ================= */
+
+.achievement {
+    background: #fffdf5;
+    border: 1px solid #d8d4c7;
+    border-left: 5px solid #3f806d;
+    padding: 22px;
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.achievement:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================= ACHIEVEMENT ICON ================= */
+
+.icon {
+    width: 60px;
+    height: 60px;
+
+    background: #e2eee9;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+
+    flex-shrink: 0;
+}
+
+
+/* ================= ACHIEVEMENT TEXT ================= */
+
+.achievement h3 {
+    color: #103832;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.achievement p {
+    color: #68736f;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.achievement small {
+    color: #7b817d;
+    font-size: 13px;
+}
+
+
+/* ================= DARK MODE ================= */
+
+body.dark {
+    background: #0d2823;
+    color: #f5f3ea;
+}
+
+
+/* Container */
+
+body.dark .container {
+    color: #f5f3ea;
+}
+
+
+/* Heading */
+
+body.dark .container h2 {
+    color: #f5f3ea;
+    border-color: #355f55;
+}
+
 
 /* Achievement Cards */
-.achievement{
-    background:#fffdf5;
-    border:1px solid #d8d4c7;
-    border-left:5px solid #3f806d;
-    padding:22px;
-    margin-bottom:18px;
-    display:flex;
-    align-items:center;
-    gap:20px;
-    border-radius:8px;
+
+body.dark .achievement {
+    background: #173b34;
+    border-color: #355f55;
+    border-left-color: #5c9f89;
+    color: #f5f3ea;
 }
 
-.icon{
-    width:58px;
-    height:58px;
-    background:#dcebe4;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:26px;
+body.dark .achievement:hover {
+    background: #1c463e;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.30);
 }
 
-.achievement h3{
-    color:#103832;
-    margin-bottom:8px;
+
+/* Achievement Text */
+
+body.dark .achievement h3 {
+    color: #f5f3ea;
 }
 
-.achievement p{
-    color:#68736f;
-    margin-bottom:8px;
+body.dark .achievement p {
+    color: #c5d4ce;
 }
 
-.achievement small{
-    color:#7b817d;
+body.dark .achievement small {
+    color: #aebfba;
+}
+
+
+/* Icon */
+
+body.dark .icon {
+    background: #245247;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar li {
+        margin: 5px 10px;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .achievement {
+        padding: 18px;
+    }
+
+    .achievement h3 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 6px 0;
+    }
+
+    .achievement {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon {
+        width: 55px;
+        height: 55px;
+    }
+
 }

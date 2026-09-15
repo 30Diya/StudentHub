@@ -244,3 +244,43 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+/* ================= DARK MODE ================= */
+
+body.dark {
+    background: #0d2823;
+    color: #f5f3ea;
+}
+
+body.dark .mission {
+    background: #173b34;
+    border-color: #355f55;
+}
+
+body.dark .mission h2 {
+    color: #f5f3ea;
+}
+
+body.dark .mission > p {
+    color: #c5d4ce;
+}
+
+body.dark .member {
+    background: #173b34;
+    border-color: #355f55;
+}
+
+body.dark .member-info h3 {
+    color: #f5f3ea;
+}
+
+body.dark .member-info p {
+    color: #c5d4ce;
+}
+
+body.dark .section-title h2 {
+    color: #f5f3ea;
+}
+
+body.dark .container {
+    color: #f5f3ea;
+}
