@@ -1,0 +1,187 @@
+{
+    "featuredEvent": {
+        "title": "Tech Fest 2025",
+        "category": "TECHNOLOGY",
+        "description": "Explore technology, innovation and exciting ideas with students from across the campus.",
+        "date": "20 August 2025",
+        "location": "Main Auditorium",
+        "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800"
+    },
+
+    "events": [
+        {
+            "id": 1,
+            "title": "Sports Day",
+            "category": "SPORTS",
+            "description": "A day full of games, competitions and team activities.",
+            "day": "28",
+            "month": "AUG",
+            "date": "28 August 2025",
+            "year": "2025",
+            "course": "BCA",
+            "location": "College Sports Ground",
+            "image": "https://images.unsplash.com/photo-1598802214267-6a4fdbeaaaee?w=800"
+        },
+
+        {
+            "id": 2,
+            "title": "Creative Workshop",
+            "category": "WORKSHOP",
+            "description": "Learn new skills and share creative ideas with other students.",
+            "day": "10",
+            "month": "SEP",
+            "date": "10 September 2025",
+            "year": "2025",
+            "course": "BBA",
+            "location": "Innovation Lab",
+            "image": "https://images.unsplash.com/photo-1598520106830-8c45c2035460?w=800"
+        },
+
+        {
+            "id": 3,
+            "title": "Student Meet",
+            "category": "CAMPUS",
+            "description": "Meet new students, make connections and enjoy campus activities.",
+            "day": "18",
+            "month": "SEP",
+            "date": "18 September 2025",
+            "year": "2025",
+            "course": "BCA",
+            "location": "Student Activity Center",
+            "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800"
+        },
+
+        {
+            "id": 4,
+            "title": "Coding Bootcamp",
+            "category": "WORKSHOP",
+            "description": "Improve your programming skills through practical coding sessions.",
+            "day": "25",
+            "month": "SEP",
+            "date": "25 September 2025",
+            "year": "2025",
+            "course": "BCA",
+            "location": "Computer Lab",
+            "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+        },
+
+        {
+            "id": 5,
+            "title": "Cultural Fest",
+            "category": "CAMPUS",
+            "description": "Celebrate culture, music, dance and creativity with fellow students.",
+            "day": "05",
+            "month": "OCT",
+            "date": "5 October 2025",
+            "year": "2025",
+            "course": "BA",
+            "location": "Main Auditorium",
+            "image": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800"
+        },
+
+        {
+            "id": 6,
+            "title": "Career Seminar",
+            "category": "SEMINAR",
+            "description": "Get career guidance and learn about opportunities from industry professionals.",
+            "day": "12",
+            "month": "OCT",
+            "date": "12 October 2025",
+            "year": "2025",
+            "course": "BBA",
+            "location": "Seminar Hall",
+            "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800"
+        },
+
+        {
+            "id": 7,
+            "title": "Photography Workshop",
+            "category": "WORKSHOP",
+            "description": "Learn photography techniques, composition and creative editing.",
+            "day": "20",
+            "month": "OCT",
+            "date": "20 October 2025",
+            "year": "2025",
+            "course": "BA",
+            "location": "Media Studio",
+            "image": "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?w=800"
+        },
+
+        {
+            "id": 8,
+            "title": "Science Exhibition",
+            "category": "EXHIBITION",
+            "description": "Explore innovative student projects and exciting scientific discoveries.",
+            "day": "28",
+            "month": "OCT",
+            "date": "28 October 2025",
+            "year": "2025",
+            "course": "BSc",
+            "location": "Science Block",
+            "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800"
+        },
+
+        {
+            "id": 9,
+            "title": "Entrepreneurship Meet",
+            "category": "SEMINAR",
+            "description": "Discover startup ideas and learn how students can become entrepreneurs.",
+            "day": "05",
+            "month": "NOV",
+            "date": "5 November 2025",
+            "year": "2025",
+            "course": "BBA",
+            "location": "Business Hall",
+            "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800"
+        },
+
+        {
+            "id": 10,
+            "title": "Web Development Seminar",
+            "category": "TECHNOLOGY",
+            "description": "Learn modern web development techniques and frontend technologies.",
+            "day": "15",
+            "month": "NOV",
+            "date": "15 November 2025",
+            "year": "2025",
+            "course": "BCA",
+            "location": "Computer Lab",
+            "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+        },
+
+        {
+            "id": 11,
+            "title": "Business Management Workshop",
+            "category": "WORKSHOP",
+            "description": "Learn important business management and leadership skills.",
+            "day": "22",
+            "month": "NOV",
+            "date": "22 November 2025",
+            "year": "2025",
+            "course": "BBA",
+            "location": "Business Hall",
+            "image": "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800"
+        },
+
+        {
+            "id": 12,
+            "title": "Programming Contest",
+            "category": "TECHNOLOGY",
+            "description": "Test your programming skills and compete with other students.",
+            "day": "30",
+            "month": "NOV",
+            "date": "30 November 2025",
+            "year": "2025",
+            "course": "BCA",
+            "location": "Computer Lab",
+            "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800"
+        }
+    ],
+
+    "stats": {
+        "upcomingEvents": "15",
+        "workshops": "8",
+        "studentsJoining": "120+",
+        "campusActivities": "6"
+    }
+}

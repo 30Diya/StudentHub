@@ -1,0 +1,136 @@
+{
+    "students": [
+        {
+            "name": "Diya Khalasi",
+            "department": "Information Technology",
+            "course": "IT",
+            "studentId": "STU2026-001",
+            "email": "diya.khalasi@studenthub.com",
+            "phone": "+91 98765 43210",
+            "academicYear": "2026 - 2027",
+            "year": 2026,
+            "status": "Active Student",
+            "attendance": "95%",
+            "progress": "78%",
+            "events": 8,
+            "profileImage": "https://images.unsplash.com/photo-1618355776464-8666794d2520?w=600&auto=format&fit=crop&q=60",
+            "subjects": [
+                {
+                    "name": "Web Development",
+                    "progress": 85
+                },
+                {
+                    "name": "Database Management",
+                    "progress": 78
+                },
+                {
+                    "name": "Programming",
+                    "progress": 88
+                },
+                {
+                    "name": "Computer Networks",
+                    "progress": 72
+                }
+            ]
+        },
+        {
+            "name": "Aarav Patel",
+            "department": "Computer Science",
+            "course": "CS",
+            "studentId": "STU2026-002",
+            "email": "aarav.patel@studenthub.com",
+            "phone": "+91 98765 43211",
+            "academicYear": "2026 - 2027",
+            "year": 2026,
+            "status": "Active Student",
+            "attendance": "91%",
+            "progress": "82%",
+            "events": 6,
+            "profileImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=60",
+            "subjects": [
+                {
+                    "name": "Web Development",
+                    "progress": 82
+                },
+                {
+                    "name": "Database Management",
+                    "progress": 85
+                },
+                {
+                    "name": "Programming",
+                    "progress": 90
+                },
+                {
+                    "name": "Computer Networks",
+                    "progress": 76
+                }
+            ]
+        },
+        {
+            "name": "Meera Shah",
+            "department": "Information Technology",
+            "course": "IT",
+            "studentId": "STU2025-003",
+            "email": "meera.shah@studenthub.com",
+            "phone": "+91 98765 43212",
+            "academicYear": "2025 - 2026",
+            "year": 2025,
+            "status": "Active Student",
+            "attendance": "94%",
+            "progress": "86%",
+            "events": 9,
+            "profileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=60",
+            "subjects": [
+                {
+                    "name": "Web Development",
+                    "progress": 90
+                },
+                {
+                    "name": "Database Management",
+                    "progress": 84
+                },
+                {
+                    "name": "Programming",
+                    "progress": 87
+                },
+                {
+                    "name": "Computer Networks",
+                    "progress": 81
+                }
+            ]
+        },
+        {
+            "name": "Rohan Mehta",
+            "department": "Computer Science",
+            "course": "CS",
+            "studentId": "STU2025-004",
+            "email": "rohan.mehta@studenthub.com",
+            "phone": "+91 98765 43213",
+            "academicYear": "2025 - 2026",
+            "year": 2025,
+            "status": "Active Student",
+            "attendance": "89%",
+            "progress": "75%",
+            "events": 5,
+            "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=60",
+            "subjects": [
+                {
+                    "name": "Web Development",
+                    "progress": 78
+                },
+                {
+                    "name": "Database Management",
+                    "progress": 74
+                },
+                {
+                    "name": "Programming",
+                    "progress": 82
+                },
+                {
+                    "name": "Computer Networks",
+                    "progress": 70
+                }
+            ]
+        }
+    ]
+}

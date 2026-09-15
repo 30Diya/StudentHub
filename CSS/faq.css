@@ -263,3 +263,200 @@ body.dark .contact-form {
 body.dark p {
     color: #c5d4ce;
 }
+/* ================= FILTERS ================= */
+
+.filters {
+    width: 85%;
+    max-width: 950px;
+    margin: 30px auto 0;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-item label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #397c6b;
+}
+
+.filter-item select {
+    padding: 10px 14px;
+    border: 1px solid #d8dfda;
+    border-radius: 8px;
+    background: white;
+    color: #142d29;
+    cursor: pointer;
+    outline: none;
+}
+
+.filter-item select:focus {
+    border-color: #65a894;
+}
+
+
+/* ================= RESULT INFO ================= */
+
+.result-info {
+    width: 85%;
+    max-width: 950px;
+    margin: 20px auto 0;
+}
+
+.result-info p {
+    color: #66736f;
+    font-size: 13px;
+}
+
+
+/* ================= NO RESULTS ================= */
+
+.no-results {
+    background: white;
+    border: 1px solid #e1e5df;
+    border-radius: 14px;
+    padding: 40px;
+    text-align: center;
+}
+
+.no-results h3 {
+    color: #12332e;
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    color: #777;
+}
+
+
+/* ================= PAGINATION ================= */
+
+.pagination {
+    width: 85%;
+    max-width: 950px;
+    margin: 30px auto 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    border: 1px solid #d8dfda;
+    background: white;
+    color: #397c6b;
+
+    padding: 9px 13px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.pagination button:hover {
+    background: #397c6b;
+    color: white;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination button.active-page {
+    background: #397c6b;
+    color: white;
+}
+
+
+/* ================= FAQ CATEGORY ================= */
+
+.question small {
+    font-size: 11px;
+}
+
+
+/* ================= DARK MODE ================= */
+
+body.dark .filter-item select {
+    background: #173b34;
+    color: #f5f3ea;
+    border-color: #355f55;
+}
+
+body.dark .filter-item label {
+    color: #8bc8b5;
+}
+
+body.dark .result-info p {
+    color: #c5d4ce;
+}
+
+body.dark .no-results {
+    background: #173b34;
+    border-color: #355f55;
+}
+
+body.dark .no-results h3 {
+    color: #f5f3ea;
+}
+
+body.dark .no-results p {
+    color: #c5d4ce;
+}
+
+body.dark .pagination button {
+    background: #173b34;
+    color: #8bc8b5;
+    border-color: #355f55;
+}
+
+body.dark .pagination button:hover,
+body.dark .pagination button.active-page {
+    background: #397c6b;
+    color: white;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width: 800px) {
+
+    .filters {
+        width: 92%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-item {
+        justify-content: space-between;
+    }
+
+    .filter-item select {
+        flex: 1;
+        max-width: 250px;
+    }
+
+    .result-info {
+        width: 92%;
+    }
+
+    .pagination {
+        width: 92%;
+    }
+
+}

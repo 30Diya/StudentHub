@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>StudentHub - Profile</title>
+
     <link rel="stylesheet" href="../CSS/profile.css">
 </head>
 
 <body>
 
 <!-- Navbar -->
+
 <nav class="navbar">
 
-    <div class="logo">STUDENT<span>HUB</span></div>
+    <div class="logo">
+        STUDENT<span>HUB</span>
+    </div>
 
     <ul>
         <li><a href="home.html">Home</a></li>
@@ -33,13 +39,21 @@
 <main class="container">
 
     <div class="heading">
+
         <div>
             <small>STUDENT ACCOUNT</small>
+
             <h1>My Profile</h1>
-            <p>Manage your personal information and student details.</p>
+
+            <p>
+                Manage your personal information and student details.
+            </p>
         </div>
 
-        <span class="status">● Active Student</span>
+        <span class="status">
+            ● Active Student
+        </span>
+
     </div>
 
 
@@ -49,18 +63,35 @@
 
         <div class="student">
 
-            <img src="https://images.unsplash.com/photo-1618355776464-8666794d2520?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3R1ZGVudCUyMHBob3RvfGVufDB8fDB8fHww" alt="Profile Picture">
+            <img
+                id="profileImage"
+                src=""
+                alt="Profile Picture"
+            >
 
             <div>
+
                 <small>STUDENT PROFILE</small>
-                <h2>Diya Khalasi</h2>
-                <p>IT Information Technology</p>
-                <span>Student ID: STU2026-001</span>
+
+                <h2 id="studentName">
+                    Loading...
+                </h2>
+
+                <p id="studentDepartment">
+                    Loading...
+                </p>
+
+                <span id="studentId">
+                    Loading...
+                </span>
+
             </div>
 
         </div>
 
-        <button>Edit Profile</button>
+        <button onclick="editProfile()">
+            Edit Profile
+        </button>
 
     </section>
 
@@ -70,21 +101,47 @@
     <section class="stats">
 
         <div>
+
             <small>ATTENDANCE</small>
-            <h2>95%</h2>
-            <p>Excellent attendance</p>
+
+            <h2 id="attendance">
+                --
+            </h2>
+
+            <p>
+                Excellent attendance
+            </p>
+
         </div>
 
+
         <div>
+
             <small>PROGRESS</small>
-            <h2>78%</h2>
-            <p>Semester completed</p>
+
+            <h2 id="progress">
+                --
+            </h2>
+
+            <p>
+                Semester completed
+            </p>
+
         </div>
 
+
         <div>
+
             <small>EVENTS</small>
-            <h2>8</h2>
-            <p>Events attended</p>
+
+            <h2 id="events">
+                --
+            </h2>
+
+            <p>
+                Events attended
+            </p>
+
         </div>
 
     </section>
@@ -94,42 +151,185 @@
 
     <section class="details">
 
+
         <div class="box">
 
-            <small>PERSONAL INFORMATION</small>
-            <h2>Student Details</h2>
+            <small>
+                PERSONAL INFORMATION
+            </small>
 
-            <p><b>Email</b><br>
-            diya.khalasi@studenthub.com</p>
+            <h2>
+                Student Details
+            </h2>
 
-            <p><b>Phone</b><br>
-            +91 98765 43210</p>
 
-            <p><b>Department</b><br>
-            Information Technology</p>
+            <p>
+                <b>Email</b><br>
 
-            <p><b>Academic Year</b><br>
-            2026 - 2027</p>
+                <span id="email">
+                    Loading...
+                </span>
+            </p>
+
+
+            <p>
+                <b>Phone</b><br>
+
+                <span id="phone">
+                    Loading...
+                </span>
+            </p>
+
+
+            <p>
+                <b>Department</b><br>
+
+                <span id="department">
+                    Loading...
+                </span>
+            </p>
+
+
+            <p>
+                <b>Academic Year</b><br>
+
+                <span id="academicYear">
+                    Loading...
+                </span>
+            </p>
 
         </div>
 
 
         <div class="box">
 
-            <small>ACADEMIC INFORMATION</small>
-            <h2>My Progress</h2>
+            <small>
+                ACADEMIC INFORMATION
+            </small>
 
-            <label>Web Development <b>85%</b></label>
-            <div class="bar"><span style="width:85%"></span></div>
+            <h2>
+                My Progress
+            </h2>
 
-            <label>Database Management <b>78%</b></label>
-            <div class="bar"><span style="width:78%"></span></div>
+            <div id="subjects">
 
-            <label>Programming <b>88%</b></label>
-            <div class="bar"><span style="width:88%"></span></div>
+                Loading subjects...
 
-            <label>Computer Networks <b>72%</b></label>
-            <div class="bar"><span style="width:72%"></span></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Filter & Sort -->
+
+    <section class="profile-filter">
+
+        <div>
+
+            <small>
+                STUDENT DIRECTORY
+            </small>
+
+            <h2>
+                Find Students
+            </h2>
+
+        </div>
+
+
+        <div class="filter-controls">
+
+            <div>
+
+                <label for="search">
+                    Search
+                </label>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search student..."
+                >
+
+            </div>
+
+
+            <div>
+
+                <label for="courseFilter">
+                    Course
+                </label>
+
+                <select id="courseFilter">
+
+                    <option value="all">
+                        All Courses
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div>
+
+                <label for="yearFilter">
+                    Year
+                </label>
+
+                <select id="yearFilter">
+
+                    <option value="all">
+                        All Years
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div>
+
+                <label for="sort">
+                    Sort
+                </label>
+
+                <select id="sort">
+
+                    <option value="az">
+                        Name A-Z
+                    </option>
+
+                    <option value="za">
+                        Name Z-A
+                    </option>
+
+                    <option value="year">
+                        Year
+                    </option>
+
+                    <option value="course">
+                        Course
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Student List -->
+
+    <section class="student-list">
+
+        <div id="studentList">
+
+            Loading students...
 
         </div>
 
@@ -138,11 +338,23 @@
 </main>
 
 
+<!-- Footer -->
+
 <footer>
-    <b>STUDENT<span>HUB</span></b>
-    <p>Your one-stop student portal.</p>
+
+    <b>
+        STUDENT<span>HUB</span>
+    </b>
+
+    <p>
+        Your one-stop student portal.
+    </p>
+
 </footer>
-<script src="JS/theme.js"></script>
+
+
+<script src="../JS/theme.js"></script>
 <script src="../JS/profile.js"></script>
+
 </body>
 </html>

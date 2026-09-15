@@ -1,0 +1,74 @@
+{
+    "faqs": [
+        {
+            "id": 1,
+            "number": "01",
+            "question": "How do I register for StudentHub?",
+            "answer": "Create an account using your student ID and email address.",
+            "category": "Account"
+        },
+        {
+            "id": 2,
+            "number": "02",
+            "question": "How can I view my dashboard?",
+            "answer": "Log in and click the Dashboard menu from the navigation bar.",
+            "category": "Dashboard"
+        },
+        {
+            "id": 3,
+            "number": "03",
+            "question": "How do I update my profile?",
+            "answer": "Go to the Profile page and click the Edit Profile button.",
+            "category": "Profile"
+        },
+        {
+            "id": 4,
+            "number": "04",
+            "question": "How can I check upcoming events?",
+            "answer": "Open the Event page from the navigation bar to see upcoming campus events.",
+            "category": "Events"
+        },
+        {
+            "id": 5,
+            "number": "05",
+            "question": "Who can I contact for support?",
+            "answer": "Use the Contact page to send your questions or feedback to StudentHub.",
+            "category": "Support"
+        },
+        {
+            "id": 6,
+            "number": "06",
+            "question": "How do I change my StudentHub password?",
+            "answer": "Open your Profile page and use the password settings to change your password.",
+            "category": "Account"
+        },
+        {
+            "id": 7,
+            "number": "07",
+            "question": "Where can I find my assignments?",
+            "answer": "Open the Assignments page from the StudentHub dashboard to view your current assignments.",
+            "category": "Assignments"
+        },
+        {
+            "id": 8,
+            "number": "08",
+            "question": "How can I check my achievements?",
+            "answer": "Open the Achievements page to view certificates, awards and other academic achievements.",
+            "category": "Achievements"
+        },
+        {
+            "id": 9,
+            "number": "09",
+            "question": "Can I search for a specific FAQ?",
+            "answer": "Yes. Use the search box at the top of the FAQ page to search questions and answers.",
+            "category": "General"
+        },
+        {
+            "id": 10,
+            "number": "10",
+            "question": "How do I contact the StudentHub support team?",
+            "answer": "Go to the Contact page and submit the contact form with your name, email, subject and message.",
+            "category": "Support"
+        }
+    ]
+}
