@@ -175,7 +175,47 @@
             "course": "BCA",
             "location": "Computer Lab",
             "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800"
+        },
+        {
+            "id": 12,
+            "title": "Programming Contest",
+            "category": "TECHNOLOGY",
+            "description": "Test your programming skills and compete with other students.",
+            "day": "30",
+            "month": "NOV",
+            "date": "30 November 2025",
+            "year": "2025",
+            "course": "BCA",
+            "location": "Computer Lab",
+            "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800"
+        },
+        {
+            "id": 12,
+            "title": "Programming Contest",
+            "category": "TECHNOLOGY",
+            "description": "Test your programming skills and compete with other students.",
+            "day": "30",
+            "month": "NOV",
+            "date": "30 November 2025",
+            "year": "2025",
+            "course": "BCA",
+            "location": "Computer Lab",
+            "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800"
+        },
+        {
+            "id": 12,
+            "title": "Programming Contest",
+            "category": "TECHNOLOGY",
+            "description": "Test your programming skills and compete with other students.",
+            "day": "30",
+            "month": "NOV",
+            "date": "30 November 2025",
+            "year": "2025",
+            "course": "BCA",
+            "location": "Computer Lab",
+            "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800"
         }
+
     ],
 
     "stats": {
