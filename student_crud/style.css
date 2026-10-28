@@ -1,0 +1,40 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
+body { background:#f5f3ea; color:#18201e; }
+
+.navbar { background:#16302b; color:white; padding:18px 5%; display:flex; align-items:center; justify-content:space-between; }
+.logo { font-size:23px; font-weight:bold; }
+.logo span, footer span { color:#8eb9a8; }
+.navbar a { color:white; text-decoration:none; padding:9px 13px; border-radius:7px; }
+.navbar a:hover { background:#3a7563; }
+
+.container { width:90%; max-width:1100px; margin:35px auto; background:white; border:1px solid #ddd9cd; border-radius:14px; padding:25px; }
+h2 { margin-bottom:18px; }
+.bar { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px; align-items:center; }
+input, select { padding:10px 12px; border:1px solid #ddd9cd; border-radius:7px; background:white; }
+input:focus, select:focus { outline:none; border-color:#3a7563; }
+button, .btn { padding:10px 15px; background:#16302b; color:white; border:0; border-radius:7px; text-decoration:none; cursor:pointer; font-size:14px; }
+button:hover, .btn:hover { background:#3a7563; }
+button.danger { background:#b91c1c; }
+button.danger:hover { background:#dc2626; }
+
+table { width:100%; border-collapse:collapse; }
+th, td { border-bottom:1px solid #eee; padding:11px 8px; text-align:left; font-size:14px; }
+th { background:#f5f3ea; color:#16302b; }
+td a { color:#3a7563; font-weight:bold; text-decoration:none; margin-right:8px; }
+
+.alert { padding:12px; margin-bottom:15px; border-radius:7px; font-size:14px; }
+.success { background:#dcfce7; color:#166534; }
+.error { background:#fee2e2; color:#991b1b; }
+
+.pager { margin:18px 0 8px; }
+.pager a { padding:6px 11px; border:1px solid #ddd9cd; margin-right:4px; border-radius:6px; text-decoration:none; color:#16302b; }
+.pager a.active { background:#16302b; color:white; }
+
+.form { display:flex; flex-direction:column; gap:8px; max-width:420px; }
+.form label { font-size:12px; font-weight:bold; color:#3a7563; margin-top:6px; }
+
+footer { background:#16302b; color:white; padding:22px 5%; margin-top:40px; }
+body.embedded { background: transparent; }
+.embedded .navbar, .embedded footer { display: none; }
+.embedded .container { margin: 0; width: 100%; max-width: none; border: 0; padding: 0; }
+.embedded .page-title { display: none; }

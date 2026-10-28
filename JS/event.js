@@ -29,7 +29,7 @@ const resultMessage = document.getElementById("resultMessage");
 
 // ================= FETCH JSON =================
 
-fetch("../JSON/events.json")
+fetch("../PHP/get_events.php")
 
     .then(function(response) {
 

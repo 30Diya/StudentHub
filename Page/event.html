@@ -284,7 +284,13 @@
 
 
     <!-- ================= EVENT GRID ================= -->
-
+<div id="adminEventButton" style="display: none; margin: 15px 0;">
+    <button
+        type="button"
+        onclick="window.location.href='../PHP/manage_events.php'">
+        + Add Event
+    </button>
+</div>
     <div
         class="event-grid"
         id="eventGrid">
@@ -394,6 +400,18 @@
 <script src="../JS/theme.js"></script>
 
 <script src="../JS/event.js"></script>
+<script>
+fetch("../PHP/check_role.php")
+    .then(response => response.json())
+    .then(data => {
+        if (data.role === "admin") {
+            document.getElementById("adminEventButton").style.display = "block";
+        }
+    })
+    .catch(error => console.error(error));
+</script>
+
+
 
 
 </body>

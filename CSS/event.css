@@ -560,3 +560,32 @@ body.dark .contact-form {
 body.dark p {
     color: #c5d4ce;
 }
+
+/* Admin Add Event Button */
+#adminEventButton {
+    margin: 20px 0;
+    text-align: right;
+}
+
+#adminEventButton button {
+    background: linear-gradient(135deg, #198754, #20a464);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+#adminEventButton button:hover {
+    background: linear-gradient(135deg, #146c43, #198754);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+#adminEventButton button:active {
+    transform: translateY(0);
+}

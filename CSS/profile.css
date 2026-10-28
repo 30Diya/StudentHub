@@ -697,3 +697,46 @@ body.dark .no-students p {
     }
 
 }
+.manage-btn {
+    display: inline-block;
+    margin-top: 12px;
+    background: #16302b;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.manage-btn:hover {
+    background: #3a7563;
+}
+.crud-section {
+    background: white;
+    border: 1px solid #ddd9cd;
+    border-radius: 14px;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.crud-section small {
+    color: #3a7563;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.crud-section h2 {
+    margin: 7px 0 15px;
+}
+
+.crud-section iframe {
+    width: 100%;
+    height: 950px;
+    border: 0;
+}
+
+body.dark .crud-section {
+    background: #173b34;
+    border-color: #34534b;
+}
